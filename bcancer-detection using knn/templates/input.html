@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=i, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Input</title>
+</head>
+<body>
+    <div class="container">
+        <form action="{{url_for('output')}}" method="post">
+       
+            
+                <input type="text" class="form-input" name="radius_mean" id="radius_mean" placeholder="radius_mean">
+            
+                <input type="text" class="form-input" name="perimeter_mean" id="perimeter_mean" placeholder="perimeter_mean">
+           
+                <input type="text" class="form-input" name="area_mean" id="area_mean" placeholder="area_mean">
+            
+                <input type="text" class="form-input" name="concave points_mean" id="concave points_mean" placeholder="concave points_mean">
+           
+                <input type="text" class="form-input" name="radius_worst" id="radius_worst" placeholder="radius_worst">
+           
+                <input type="text" class="form-input" name="perimeter_worst" id="perimeter_worst" placeholder="perimeter_worst">
+           
+                <input type="text" class="form-input" name="area_worst" id="area_worst" placeholder="area_worst">
+            
+                <input type="text" class="form-input" name="concave points_worst" id="concave points_worst" placeholder="concave points_worst">
+           
+                <button type="submit" class="submit">Submit</button>
+           
+            
+      
+        </form>
+    </div>
+    
+</body>
+</html>
